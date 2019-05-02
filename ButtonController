@@ -1,0 +1,32 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ButtonController : MonoBehaviour
+{
+
+    public GameObject[] DoorsClosed;
+    public GameObject[] DoorsOpen;
+    private void OnTriggerEnter()
+    {
+        print("Button pressed");
+        for (int i = 0; i < DoorsClosed.Length; i++)
+        {
+            Vector3 newPosition = DoorsClosed[i].transform.position;
+            if (newPosition.y == 2)
+            {
+                newPosition.y = (float)-0.95;
+            }
+            DoorsClosed[i].transform.position = newPosition;
+        }
+        for (int i = 0; i < DoorsOpen.Length; i++)
+        {
+            Vector3 newPosition = DoorsOpen[i].transform.position;
+            if (newPosition.y == (float)-0.95)
+            {
+                newPosition.y = (float)2;
+            }
+            DoorsOpen[i].transform.position = newPosition;
+        }
+    }
+}
