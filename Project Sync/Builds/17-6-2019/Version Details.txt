@@ -1,0 +1,13 @@
++Added tutorial system! WOOHOO!
+-Wasted six hours of my life doing it :(
++Altered materials and shaders
++Some smaller bug fixes that I can't remember
+
+To do:
+-Make text box much bigger (text size too!)
+-Alter second dialogue trigger and button collider sizes- make them smaller AND the same
+-Simpler text
+-Level select and end of level menu
+-Pause menu
+-Turrets and Level 2
+-Options menu
