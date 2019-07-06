@@ -65,6 +65,7 @@ public class ChaserController : MonoBehaviour
             }
         }
 
-        //On collision- clone player, kill clone
+        //On collision- kill clone
+        //Crush player against walls?
     }
 }

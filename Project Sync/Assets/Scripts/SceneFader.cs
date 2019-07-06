@@ -8,6 +8,7 @@ public class SceneFader : MonoBehaviour {
 
     public Image img;
     public AnimationCurve curve;
+    
 
     void Start()
     {
@@ -35,7 +36,6 @@ public class SceneFader : MonoBehaviour {
     IEnumerator FadeOut(int scene)
     {
         float t = 0f;
-
         while (t < 1f)
         {
             t += Time.deltaTime;
@@ -43,7 +43,6 @@ public class SceneFader : MonoBehaviour {
             img.color = new Color(0f, 0f, 0f, a);
             yield return 0;
         }
-
         SceneManager.LoadScene(scene);
     }
 }

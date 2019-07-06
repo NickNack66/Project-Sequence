@@ -25,7 +25,7 @@ public class MovementRecorder : MonoBehaviour
 ;        }
         if(Input.GetKeyDown("space") == true)
         {
-            //if (spaceEnabled)
+            //if (spaceEnabled) Should probs fix this
             //{
                 isRec = false;
                 Instantiate(Clone, new Vector3(0, (float)0.75, 0), new Quaternion(0, 0, 0, 0));
