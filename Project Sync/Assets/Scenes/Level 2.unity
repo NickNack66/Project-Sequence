@@ -168,6 +168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 10
   movementSpeed: 6
+  retreatSpeed: 2
 --- !u!4 &80334763
 Transform:
   m_ObjectHideFlags: 0
@@ -866,7 +867,8 @@ PrefabInstance:
     - target: {fileID: 4394274195383530737, guid: 10fe0f8286a0ab944ac12fe26a45a830,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
-      value: If it hits you, you'll have to completely restart the level...
+      value: If you get hit by an enemy, it'll create a clone, just like when you
+        press the spacebar!
       objectReference: {fileID: 0}
     - target: {fileID: 4394274195383530737, guid: 10fe0f8286a0ab944ac12fe26a45a830,
         type: 3}
@@ -894,6 +896,11 @@ PrefabInstance:
       propertyPath: nextTrigger
       value: 
       objectReference: {fileID: 6644983138810980558}
+    - target: {fileID: 4394274195383530737, guid: 10fe0f8286a0ab944ac12fe26a45a830,
+        type: 3}
+      propertyPath: enableSpace
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4394274195383530740, guid: 10fe0f8286a0ab944ac12fe26a45a830,
         type: 3}
       propertyPath: m_Enabled
@@ -1649,6 +1656,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Goal
+      objectReference: {fileID: 0}
+    - target: {fileID: 5077280024315196275, guid: 74550a34e10627c4f86e6e7602fd02c6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5077280024315196271, guid: 74550a34e10627c4f86e6e7602fd02c6,
         type: 3}

@@ -8,9 +8,13 @@ public class ChaserController : MonoBehaviour
     //public GameObject player;
     public float range;
     public float movementSpeed;
-    private bool moving = false;
-    float distanceTravelled = 0;
+    public float retreatSpeed;
+    private float movementPhase = 1;
+    private Vector3[] directions;
+    private Vector3 direction;
     Vector3 lastPosition;
+    RaycastHit[] hit;
+    int i;
 
     // Start is called before the first frame update
     void Start()
@@ -21,29 +25,46 @@ public class ChaserController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (moving == false)
+        if (movementPhase == 1) //Detection
         {
-            transform.Rotate(new Vector3(0, 180, 0) * Time.deltaTime);
-            Vector3 fwd = transform.TransformDirection(Vector3.forward);
-            RaycastHit hit;
-            if(Physics.Raycast(transform.position, fwd, out hit, range, 9, QueryTriggerInteraction.Collide))
+            directions = new Vector3[] { Vector3.left, Vector3.right, Vector3.forward, Vector3.back};
+
+            hit = new RaycastHit[4];
+            i = hit.Length;
+            while (i > 0)
             {
-                Debug.DrawLine(transform.position, hit.point);
-                if (hit.transform.name == "Player")
+                i--;
+                if (Physics.SphereCast(transform.position, 1, directions[i], out hit[i], range, 9, QueryTriggerInteraction.Collide))
                 {
-                    Debug.Log("Player detected by chaser!");
-                    moving = true;
+                    if (hit[i].transform.name == "Player" || hit[i].transform.name == "Clone(Clone)")
+                    {
+                        Debug.Log("Player detected by chaser!");
+                        direction = directions[i];
+                        movementPhase = 2;
+                    }
                 }
             }
             
+            
         }
-        if (moving)
+        if (movementPhase == 2) //Chase
         {
-            transform.position += transform.forward * Time.deltaTime * movementSpeed;
-            if(Vector3.Distance(transform.position, lastPosition) == range)
+            //Raycast to detect if a wall is directly in front; if so, move to stage 3
+            transform.position += direction * Time.deltaTime * movementSpeed;
+            if(Vector3.Distance(transform.position, lastPosition) > range)
             {
-                moving = false;
+                movementPhase = 3;
             }
         }
+        if (movementPhase == 3) //Retreat
+        {
+            transform.position = Vector3.MoveTowards(transform.position, lastPosition, retreatSpeed*Time.deltaTime);
+            if (Vector3.Distance(transform.position, lastPosition) < 0.1)
+            {
+                movementPhase = 1;
+            }
+        }
+
+        //On collision- clone player, kill clone
     }
 }
