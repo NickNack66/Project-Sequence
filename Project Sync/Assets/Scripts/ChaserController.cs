@@ -68,4 +68,14 @@ public class ChaserController : MonoBehaviour
         //On collision- kill clone
         //Crush player against walls?
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        print("Collided with something");
+        if (collision.rigidbody.gameObject.tag == "Clone")
+        {
+            Destroy(collision.rigidbody.gameObject);
+            print("Clone destroyed");
+        }
+    }
 }

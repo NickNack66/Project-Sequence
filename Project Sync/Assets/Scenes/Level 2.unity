@@ -2256,8 +2256,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4022255763840991756, guid: cbf300b9e61191d4d89a4579c067af93,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4022255763840991757, guid: cbf300b9e61191d4d89a4579c067af93,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbf300b9e61191d4d89a4579c067af93, type: 3}
+--- !u!1 &4022255762169531459 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4022255762224694250, guid: cbf300b9e61191d4d89a4579c067af93,
+    type: 3}
+  m_PrefabInstance: {fileID: 4022255762169531458}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &4022255762169531460
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4022255762169531459}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5, y: 2, z: 5}
+  m_Center: {x: -0.25, y: 0, z: -0.25}
 --- !u!1001 &4570456074320447194
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2358,7 +2387,7 @@ PrefabInstance:
     - target: {fileID: 4570456075148852105, guid: a4b3bfce561395247ba101db623df7d8,
         type: 3}
       propertyPath: m_CollisionDetection
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7034193138848099518, guid: a4b3bfce561395247ba101db623df7d8,
         type: 3}

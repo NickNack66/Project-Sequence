@@ -39,4 +39,12 @@ public class CloneController : MonoBehaviour
         frame += 1;
         yield return null;
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.transform.gameObject.name == "Chaser")
+        {
+            print("Clone hit by chaser");
+        }
+    }
 }
