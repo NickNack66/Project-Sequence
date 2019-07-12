@@ -802,24 +802,24 @@ PrefabInstance:
     - target: {fileID: 4394274195383530737, guid: 10fe0f8286a0ab944ac12fe26a45a830,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Yikes! That TURRET in the top-right corner looks dangerous...
+      value: Yikes! That CHASER in the top-right corner looks dangerous...
       objectReference: {fileID: 0}
     - target: {fileID: 4394274195383530737, guid: 10fe0f8286a0ab944ac12fe26a45a830,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
-      value: If you get hit by an enemy, it'll create a clone, just like when you
-        press the spacebar!
+      value: Chasers won't really harm you, but they're great at preventing you from
+        entering areas.
       objectReference: {fileID: 0}
     - target: {fileID: 4394274195383530737, guid: 10fe0f8286a0ab944ac12fe26a45a830,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[2]
-      value: But if it hits a clone, nothing happens!
+      value: As soon as they see you, they'll chase you and shove you away at every
+        opportunity!
       objectReference: {fileID: 0}
     - target: {fileID: 4394274195383530737, guid: 10fe0f8286a0ab944ac12fe26a45a830,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[3]
-      value: Hey, maybe you should try using clones to distract it... just remember
-        to press SPACEBAR before you get zapped!
+      value: Hey, maybe you should try using clones to distract it...
       objectReference: {fileID: 0}
     - target: {fileID: 4394274195383530737, guid: 10fe0f8286a0ab944ac12fe26a45a830,
         type: 3}
@@ -2256,37 +2256,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4022255763840991756, guid: cbf300b9e61191d4d89a4579c067af93,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4022255763840991757, guid: cbf300b9e61191d4d89a4579c067af93,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbf300b9e61191d4d89a4579c067af93, type: 3}
---- !u!1 &4022255762169531459 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4022255762224694250, guid: cbf300b9e61191d4d89a4579c067af93,
-    type: 3}
-  m_PrefabInstance: {fileID: 4022255762169531458}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &4022255762169531460
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4022255762169531459}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 5, y: 2, z: 5}
-  m_Center: {x: -0.25, y: 0, z: -0.25}
 --- !u!1001 &4570456074320447194
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -10,8 +10,13 @@ public class ChaserController : MonoBehaviour
     public float movementSpeed;
     public float retreatSpeed;
     private float movementPhase = 1;
-    private Vector3[] directions;
+    public Vector3 pushDir;
+    public Collider outerCollider;
+    private float pushForce = 10000;
+    public Vector3[] directions;
     private Vector3 direction;
+    private Rigidbody rb;
+    private PlayerMovement playerMovement;
     Vector3 lastPosition;
     RaycastHit[] hit;
     int i;
@@ -27,8 +32,8 @@ public class ChaserController : MonoBehaviour
     {
         if (movementPhase == 1) //Detection
         {
-            directions = new Vector3[] { Vector3.left, Vector3.right, Vector3.forward, Vector3.back};
-
+            //directions = new Vector3[] { Vector3.left, Vector3.right, Vector3.forward, Vector3.back};
+            outerCollider.enabled = true;
             hit = new RaycastHit[4];
             i = hit.Length;
             while (i > 0)
@@ -36,12 +41,11 @@ public class ChaserController : MonoBehaviour
                 i--;
                 if (Physics.SphereCast(transform.position, 1, directions[i], out hit[i], range, 9, QueryTriggerInteraction.Collide))
                 {
-                    if (hit[i].transform.name == "Player" || hit[i].transform.name == "Clone(Clone)")
-                    {
-                        Debug.Log("Player detected by chaser!");
-                        direction = directions[i];
-                        movementPhase = 2;
-                    }
+                        if (hit[i].transform.name == "Player" || hit[i].transform.name == "Clone(Clone)")
+                        {
+                            direction = directions[i];
+                            movementPhase = 2;
+                        }
                 }
             }
             
@@ -65,20 +69,18 @@ public class ChaserController : MonoBehaviour
             }
         }
 
-        //On collision- kill clone
-        //Crush player against walls?
+
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        print("Collided with something");
-        if (collision.rigidbody.gameObject.tag == "Clone")
+        if (other.transform.name == "Player")
         {
-            Destroy(collision.rigidbody.gameObject);
-            print("Clone destroyed");
+            outerCollider.enabled = false;
+            rb = other.transform.GetComponent<Rigidbody>();
+            rb.AddForce(pushDir*pushForce);
+            //playerMovement = other.transform.GetComponent<PlayerMovement>();
+            //playerMovement.ChaserPush(pushDir);
         }
     }
-    //Have a small trigger collider inside
-    //Forget clone crushing
-    //When the player touches the inside trigger, push it in a publically set direction
 }
