@@ -28,7 +28,7 @@ public class MovementRecorder : MonoBehaviour
             //if (spaceEnabled) Should probs fix this
             //{
                 isRec = false;
-                Instantiate(Clone, new Vector3(0, (float)0.75, 0), new Quaternion(0, 0, 0, 0));
+                Instantiate(Clone, numsRecord[0], new Quaternion(0, 0, 0, 0));
                 Scene scene = SceneManager.GetActiveScene();
                 SceneManager.LoadScene(scene.name);
             //}

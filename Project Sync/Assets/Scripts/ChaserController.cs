@@ -78,4 +78,7 @@ public class ChaserController : MonoBehaviour
             print("Clone destroyed");
         }
     }
+    //Have a small trigger collider inside
+    //Forget clone crushing
+    //When the player touches the inside trigger, push it in a publically set direction
 }

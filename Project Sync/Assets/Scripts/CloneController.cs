@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class CloneController : MonoBehaviour
 {
-
     private GameObject player;
     private MovementRecorder recorder;
 
