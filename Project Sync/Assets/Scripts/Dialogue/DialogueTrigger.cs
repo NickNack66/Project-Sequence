@@ -43,6 +43,7 @@ public class DialogueTrigger : MonoBehaviour
         }
     }
 
+
     /*private void Update()
     {
         print(triggered);
@@ -58,10 +59,10 @@ public class DialogueTrigger : MonoBehaviour
         player = GameObject.Find("Player");
         rb = player.GetComponent<Rigidbody>();
         rb.constraints = RigidbodyConstraints.FreezeAll;
-        if (enableSpace)
+        /*if (enableSpace)
         {
             movementRec.spaceEnabled = true;
-        }
+        }*/
         nextTrigger.SetActive(true);
         triggered = true;
         print(triggered);

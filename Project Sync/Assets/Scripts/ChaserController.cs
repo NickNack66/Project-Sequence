@@ -12,7 +12,7 @@ public class ChaserController : MonoBehaviour
     private float movementPhase = 1;
     public Vector3 pushDir;
     public Collider outerCollider;
-    private float pushForce = 10000;
+    private float pushForce = 1000000;
     public Vector3[] directions;
     private Vector3 direction;
     private Rigidbody rb;

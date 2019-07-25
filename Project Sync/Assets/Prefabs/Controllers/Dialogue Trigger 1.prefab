@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4394274195383530737}
   m_Layer: 0
   m_Name: Dialogue Trigger 1
-  m_TagString: Untagged
+  m_TagString: DialogueTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,5 +111,6 @@ MonoBehaviour:
     - You passed out after putting on that strange mask...
     - Why don't you try moving around with the arrow keys or WASD?
     - When you're ready, step on that button to the left.
-  rb: {fileID: 0}
+  player: {fileID: 0}
   nextTrigger: {fileID: 0}
+  enableSpace: 0

@@ -7,6 +7,8 @@ public class EndOfLevel : MonoBehaviour
     public Animator anim;
     public GameObject menu;
     private GameObject[] clones;
+    private GameObject[] dialogueTriggers;
+    private DialogueTrigger triggerController;
     private GameObject musicPlayer;
     private GameObject player;
 
@@ -30,6 +32,13 @@ public class EndOfLevel : MonoBehaviour
             }
             musicPlayer = GameObject.FindGameObjectWithTag("MusicPlayer");
             Destroy(musicPlayer);
+            dialogueTriggers = GameObject.FindGameObjectsWithTag("DialogueTrigger");
+            foreach (GameObject trigger in dialogueTriggers)
+            {
+                //triggerController = trigger.GetComponent<DialogueTrigger>();
+               // triggerController.singletons = null;
+                Destroy(trigger);
+            }
         }//Play some music from this object
     }//Dialogue triggers not appearing when transitioning to next level
 }

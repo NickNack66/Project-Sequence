@@ -7,6 +7,7 @@ TagManager:
   - Clone
   - SceneFader
   - MusicPlayer
+  - DialogueTrigger
   layers:
   - Default
   - TransparentFX
