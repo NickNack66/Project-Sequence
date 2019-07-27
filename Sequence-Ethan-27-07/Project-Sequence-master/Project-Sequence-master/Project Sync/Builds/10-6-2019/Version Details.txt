@@ -1,0 +1,14 @@
++Main Menu has been added
++Restart functionality has been added (press R)
++A goal was added (currently not functioning)
++Fading between screens was added
++Materials and shaders were altered
+
+To do:
+-Level select screen from main menu (by 18/06)
+-End of level menu, which can return to level select or to next level (by 24/06)
+-Tutorial text (by 3/07)
+-Pause button + menu (by 10/7)
+-Turret (Ethan- by 24/06)
+-Smooth door motion (Ethan)
+-More levels (Tom + Ethan + me)

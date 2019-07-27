@@ -1,0 +1,10 @@
+-First build of the game! Woohoo!
+-Time remaining: Approximately 63 days
+
+To do:
+-Stop music from restarting
+-Finish Main Menu
+-Finish Turret Object
+-Add restart button
+-Add tutorial text
+-Build levels
