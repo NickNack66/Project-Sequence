@@ -799,6 +799,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4394274195383530740, guid: 10fe0f8286a0ab944ac12fe26a45a830,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4394274195383530737, guid: 10fe0f8286a0ab944ac12fe26a45a830,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
@@ -840,11 +845,6 @@ PrefabInstance:
         type: 3}
       propertyPath: enableSpace
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4394274195383530740, guid: 10fe0f8286a0ab944ac12fe26a45a830,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10fe0f8286a0ab944ac12fe26a45a830, type: 3}
@@ -2038,7 +2038,7 @@ PrefabInstance:
     - target: {fileID: 738315774347624503, guid: 6be4f337f77d9e04eb5fa1f903c542a2,
         type: 3}
       propertyPath: m_Name
-      value: Audio Master 1
+      value: Audio Master 3
       objectReference: {fileID: 0}
     - target: {fileID: 738315774347624501, guid: 6be4f337f77d9e04eb5fa1f903c542a2,
         type: 3}

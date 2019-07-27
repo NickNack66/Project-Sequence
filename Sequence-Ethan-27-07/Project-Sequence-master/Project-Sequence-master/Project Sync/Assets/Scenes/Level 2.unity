@@ -490,6 +490,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4394274195383530740, guid: 10fe0f8286a0ab944ac12fe26a45a830,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4394274195383530737, guid: 10fe0f8286a0ab944ac12fe26a45a830,
         type: 3}
       propertyPath: dialogue.sentences.Array.size
@@ -537,11 +542,6 @@ PrefabInstance:
       propertyPath: dialogue.sentences.Array.data[5]
       value: Give it a try, and then use what you've learned to reach the goal. Good
         luck!
-      objectReference: {fileID: 0}
-    - target: {fileID: 4394274195383530740, guid: 10fe0f8286a0ab944ac12fe26a45a830,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10fe0f8286a0ab944ac12fe26a45a830, type: 3}
@@ -1234,6 +1234,26 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4394274195383530743, guid: 10fe0f8286a0ab944ac12fe26a45a830,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+    - target: {fileID: 4394274195383530740, guid: 10fe0f8286a0ab944ac12fe26a45a830,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4394274195383530740, guid: 10fe0f8286a0ab944ac12fe26a45a830,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4394274195383530741, guid: 10fe0f8286a0ab944ac12fe26a45a830,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4394274195383530737, guid: 10fe0f8286a0ab944ac12fe26a45a830,
         type: 3}
       propertyPath: dialogue.sentences.Array.size
@@ -1286,26 +1306,6 @@ PrefabInstance:
       propertyPath: enableSpace
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4394274195383530740, guid: 10fe0f8286a0ab944ac12fe26a45a830,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4394274195383530740, guid: 10fe0f8286a0ab944ac12fe26a45a830,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-    - target: {fileID: 4394274195383530741, guid: 10fe0f8286a0ab944ac12fe26a45a830,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4394274195383530743, guid: 10fe0f8286a0ab944ac12fe26a45a830,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10fe0f8286a0ab944ac12fe26a45a830, type: 3}
 --- !u!1 &1104901646 stripped
@@ -1949,7 +1949,7 @@ PrefabInstance:
     - target: {fileID: 738315774347624503, guid: 6be4f337f77d9e04eb5fa1f903c542a2,
         type: 3}
       propertyPath: m_Name
-      value: Audio Master
+      value: Audio Master 2
       objectReference: {fileID: 0}
     - target: {fileID: 738315774347624501, guid: 6be4f337f77d9e04eb5fa1f903c542a2,
         type: 3}
@@ -2566,11 +2566,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -45
       objectReference: {fileID: 0}
-    - target: {fileID: 5077280024315196268, guid: 74550a34e10627c4f86e6e7602fd02c6,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3236876051826947809, guid: 74550a34e10627c4f86e6e7602fd02c6,
         type: 3}
       propertyPath: anim
@@ -2581,6 +2576,11 @@ PrefabInstance:
       propertyPath: menu
       value: 
       objectReference: {fileID: 2081520238}
+    - target: {fileID: 5077280024315196268, guid: 74550a34e10627c4f86e6e7602fd02c6,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74550a34e10627c4f86e6e7602fd02c6, type: 3}
 --- !u!1001 &6250597860473726486
